@@ -35,7 +35,7 @@
   <script src="js/init.js">
   </script>
   <script type="module"
-    src="cmp/nav.js">
+    src="cmp/mi-nav.js">
     </script>
   <script type="module"
     src="cmp/mi-footer.js">
@@ -45,51 +45,10 @@
     </script>
   <link rel="stylesheet"
     href="css/estilos.css">
-  
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
-
-        .control-label {
-            text-align: left !important;
-            /* !important added for priority in SO snippet. */
-        }
-    </style>
 </head>
 <body>
-   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-
-            <button class="navbar-toggler"  data-toggle="collapse" data-target="#navbarNav">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                    <a class="navbar-brand" href="index.html">
-                            <img src="favicon.ico"  height="150" alt="">
-                    </a>
-            </div>
-            <form class="form-inline">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="cerrarSesion();">Salir</button>
-            </form>
-          </nav>
-   
-  
  <form name="forma">
-    
+    <mi-nav></mi-nav>
     <header>
       <h1>Inicio de Sesión</h1>
       <div class="herramientas">
@@ -127,9 +86,5 @@
   <script type="module"
     src="js/CtrlSesion.js">
     </script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.4.0/dist/sweetalert2.all.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
 </body>
 </html>
