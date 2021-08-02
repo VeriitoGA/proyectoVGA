@@ -9,7 +9,7 @@ import {
   muestraError
 } from "../lib/util.js";
 
-class Nav extends HTMLElement {
+class nav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
       ` <ul class="navbar-nav">
@@ -63,4 +63,4 @@ class Nav extends HTMLElement {
 
 
 customElements.define(
-  "Nav", Nav);
+  "nav", nav);
