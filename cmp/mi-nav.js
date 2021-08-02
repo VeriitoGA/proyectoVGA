@@ -12,12 +12,11 @@ import {
 class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      `<ul>
-        <li>
-          <a href="index.html">
-            Sesión</a>
-        </li>
-      </ul>`;
+      ` <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" class="text-light">Sesión</a>
+                </li>
+      </ul> `;
     this.ul =
       this.querySelector("ul");
     getAuth().onAuthStateChanged(
@@ -40,10 +39,9 @@ class MiNav extends HTMLElement {
            * para docentes. */
           if (roles.has("Docente")) {
             html += /* html */
-              `<li>
-                <a href=
-                  "chat.html">Chat</a>
-              </li>`;
+              `<li class="nav-item active">
+                    <a class="nav-link" href="chat.html" class="text-light">Chat</a>
+                </li>`;
           }
           /* Enlaces para solo
            * administradores.
@@ -51,14 +49,12 @@ class MiNav extends HTMLElement {
           if (roles.has(
             "Administrador")) {
             html += /* html */
-              `<li>
-                <a href=
-    "docentes.html">Docentes</a>
-              </li>
-              <li>
-                <a href=
-          "usuarios.html">Usuarios</a>
-              </li>`;
+              `<li class="nav-item active">
+                    <a class="nav-link" href="docentes.html" class="text-light">Docentes</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="usuarios.html" class="text-light">Usuarios</a>
+                </li>`;
           }
           this.ul.innerHTML += html;
         }
