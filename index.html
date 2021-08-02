@@ -48,7 +48,25 @@
 </head>
 <body>
  <form name="forma">
-    <mi-nav></mi-nav>
+    <mi-nav>
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+
+            <button class="navbar-toggler"  data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                    <a class="navbar-brand" href="index.html">
+                            <img src="favicon.ico"  height="150" alt="">
+                    </a>
+            </div>
+            <form class="form-inline">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="cerrarSesion();">Salir</button>
+            </form>
+          </nav>
+   
+   
+   </mi-nav>
     <header>
       <h1>Inicio de Sesión</h1>
       <div class="herramientas">
