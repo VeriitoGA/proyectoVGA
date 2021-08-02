@@ -13,6 +13,9 @@ class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
       `<ul>
+       <a>
+            <img src="favicon.ico" height="100" alt="">
+          </a>
         <li>
           <a href="index.html">
             Sesión</a>
